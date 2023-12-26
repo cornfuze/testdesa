@@ -440,6 +440,7 @@ h1.text-center::after {
 
   
 h2.title-section {
+    color: aliceblue;
     position: relative;
     display: inline-block;
   }
@@ -451,7 +452,8 @@ h2.title-section::after {
     transform: translateX(-50%);
     height: 4px;
     width: 200px;
-    background-color: #1b4a3b;
+    background-color: var(--bg-focus-cat);
+    border-radius: 2px;
   }
   .card {
     font-size: 1rem;
@@ -666,4 +668,51 @@ h2.title-section::after {
       text-decoration: underline;
     }
   }
+}
+.dark-green {
+  background-color: var(--bg-focus-cat);
+}
+
+.icon-background {
+  position: absolute;
+  z-index: 1;
+  font-size: 8em;
+  opacity: 0.1;
+}
+
+.text-content {
+  position: relative;
+  z-index: 2;
+}
+
+.min-height-card {
+  min-height: 110px; 
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: block;
+}
+
+.card-link:hover {
+  transform: scale(1.10);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2.title-section2 {
+  color: black;
+  position: relative;
+}
+h2.title-section2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 240px;
+  background-color: var(--bg-focus-cat);
+  border-radius: 2px;
 }
