@@ -148,3 +148,20 @@ const typeEffect = () => {
 };
 
 typeEffect();
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const images = document.querySelectorAll('.card-img-top');
+
+  images.forEach(image => {
+      image.addEventListener('mouseover', () => {
+          image.classList.remove('grayscale');
+          image.classList.add('color');
+      });
+
+      image.addEventListener('mouseout', () => {
+          image.classList.remove('color');
+          image.classList.add('grayscale');
+      });
+  });
+});

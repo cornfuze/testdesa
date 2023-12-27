@@ -716,3 +716,29 @@ h2.title-section2::after {
   background-color: var(--bg-focus-cat);
   border-radius: 2px;
 }
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.cardus {
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cardus:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  transition: filter 0.3s ease-in-out;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.image-container:hover .card-img-top {
+  filter: grayscale(0%);
+}
