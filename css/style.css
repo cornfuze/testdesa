@@ -331,7 +331,18 @@ h1.text-center::after {
   transform: translateX(-50%);
   height: 4px;
   width: 80px;
-  background-color: #6f42c1;
+  background-color: var(--bg-ft-col-1);
+}
+
+h1.text-center.visimisi::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -9px;
+  transform: translateX(-50%);
+  height: 4px;
+  width:270px;
+  background-color: var(--bg-ft-col-1);
 }
 
 .cid-tz8BZvclXW {
