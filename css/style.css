@@ -357,6 +357,17 @@ h1.text-center.visimisi::after {
   word-wrap: break-word;
 }
 
+.cid-tz8BZvclXW2 {
+  color: aliceblue;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  word-wrap: break-word;
+}
+
 .mbr-section-btn a.btn:not(.btn-form) {
   border-radius: 15px;
   display: block;
@@ -439,7 +450,6 @@ h1.text-center.visimisi::after {
 }
 
 .focus-section {
-  background: var(--bg-focus-section);
   font-family: var(--font1);
   transition: all 0.3s linear 0s;
 
@@ -448,13 +458,18 @@ h1.text-center.visimisi::after {
     color: var(--tx-focus-section-title);
   }
 
-
-  
 h2.title-section {
     color: aliceblue;
     position: relative;
     display: inline-block;
   }
+
+  h2.invers {
+    color: rgb(0, 0, 0);
+    position: relative;
+    display: inline-block;
+  }
+
 h2.title-section::after {
     content: "";
     position: absolute;
@@ -469,7 +484,7 @@ h2.title-section::after {
   .card {
     font-size: 1rem;
     border: var(--focus-border-card);
-
+    
     .card-body {
       background: var(--bg-focus-card);
       color: var(--tx-focus-card);
